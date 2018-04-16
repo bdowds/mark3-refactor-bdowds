@@ -22,9 +22,10 @@ namespace RefactorKata
             }
             Conn.Dispose();
             Console.WriteLine("Products Loaded!");
-            for (int i = 0; i < products.Count; i++)
+
+            foreach (var item in products)
             {
-                Console.WriteLine(products[i].Name);
+                Console.WriteLine(item.Name);
             }
         }
     }
